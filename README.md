@@ -23,7 +23,8 @@ para usarlo ponerlo en el package.json
   ...
   npm start
 </br>
-C:\MongoDB\Server\4.2\bin\mongod.exe" --dbpath="c:\mongodb\data\db"
+C:\MongoDb\Server\4.2\bin\mongod.exe --dbpath="c:\MongoDb\data\db"
+C:\MongoDb\server\4.2
 
 # Colores para la consola express
 Reset = "\x1b[0m"
@@ -66,3 +67,5 @@ mongodb object modeling for node.js</br>
 https://mongoosejs.com/</br>
 npm install mongoose --save
 
+# Body parse
+npm install body-parser --save </br>
