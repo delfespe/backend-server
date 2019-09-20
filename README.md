@@ -23,8 +23,11 @@ para usarlo ponerlo en el package.json
   ...
   npm start
 </br>
+start.bat
+</br>
 C:\MongoDb\Server\4.2\bin\mongod.exe --dbpath="c:\MongoDb\data\db"
-C:\MongoDb\server\4.2
+</br>
+
 
 # Colores para la consola express
 Reset = "\x1b[0m"
@@ -64,8 +67,16 @@ gui: https://robomongo.org/
 
 # MonGooseJs
 mongodb object modeling for node.js</br>
-https://mongoosejs.com/</br>
+https://mongoosejs.com/
+</br>
 npm install mongoose --save
+</br>
+npm install mongoose-unique-validator --save
+</br>
+
+# Encriptar
+npm install bcryptjs --save
+</br>
 
 # Body parse
 npm install body-parser --save </br>

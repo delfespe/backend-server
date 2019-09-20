@@ -1,4 +1,5 @@
 var express = require('express');
+var bcrypt = require('bcryptjs');
 
 var app = express();
 
@@ -11,19 +12,32 @@ app.get('/', (request, response, next) => {
 
     Usuario.find({}, 'nombre email imagen role')
         .exec(
-            (err, usuarios) => {
-                if (err) return response.status(500).json({
-                    ok: false,
-                    mensaje: 'Error cargando usuarios',
-                    errors: err
-                });
+        (err, usuarios) => {
+            if (err) return response.status(500).json({
+                ok: false,
+                mensaje: 'Error cargando usuarios',
+                errors: err
+            });
 
-                response.status(200).json({
-                    ok: true,
-                    usuarios: usuarios
-                });
-            })
+            response.status(200).json({
+                ok: true,
+                usuarios: usuarios
+            });
+        })
 
+});
+
+// ================
+// Actualizar usuario
+// ================
+app.put('/:id', (request, response) => {
+
+    var id = request.params.id;
+
+    response.status(200).json({
+        ok:true,
+        id:id
+    });
 });
 
 // ================
@@ -35,7 +49,7 @@ app.post('/', (request, response, next) => {
     var usuario = new Usuario({
         nombre: body.nombre,
         email: body.email,
-        password: body.password,
+        password: bcrypt.hashSync(body.password, 10),
         imagen: body.imagen,
         role: body.role
     });
@@ -43,7 +57,7 @@ app.post('/', (request, response, next) => {
     usuario.save((err, usuarioGuardado) => {
 
         if (err) {
-            return response.status(500).json({
+            return response.status(400).json({
                 ok: false,
                 mensaje: 'Error creando usuarios',
                 errors: err
