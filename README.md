@@ -1,7 +1,7 @@
 # backend-server
 Express
 servidor de peticiones rest
-https://expressjs.co
+https://expressjs.com
 
 # Inicio
 md backend-service
@@ -22,6 +22,8 @@ para usarlo ponerlo en el package.json
 
   ...
   npm start
+</br>
+C:\MongoDB\Server\4.2\bin\mongod.exe" --dbpath="c:\mongodb\data\db"
 
 # Colores para la consola express
 Reset = "\x1b[0m"
