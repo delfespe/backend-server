@@ -10,10 +10,10 @@ cd backend-service
 crea package.json
 npm init 
 
-instala node y lo pone en dependencias solo del proyecto
+instala node y lo pone en dependencias solo del proyecto</br>
 npm install express --save
 
-instala demonio verificador cambios solo proyecto y desarrollo
+instala demonio verificador cambios solo proyecto y desarrollo </br>
 npm install --save-dev nodemon
 
 para usarlo ponerlo en el package.json
@@ -54,13 +54,13 @@ BgWhite = "\x1b[47m"
 
 
 # MongoDb
-sistema de base de datos NoSQL orientado a documentos de código abierto, usa archivos BSON
-https://docs.mongodb.com/manual/installation/
-puerto 27017
+sistema de base de datos NoSQL orientado a documentos de código abierto, usa archivos BSON</br>
+https://docs.mongodb.com/manual/installation/</br>
+puerto 27017</br>
 gui: https://robomongo.org/
 
 # MonGooseJs
-mongodb object modeling for node.js
-https://mongoosejs.com/
+mongodb object modeling for node.js</br>
+https://mongoosejs.com/</br>
 npm install mongoose --save
 
