@@ -80,3 +80,6 @@ npm install bcryptjs --save
 
 # Body parse
 npm install body-parser --save </br>
+
+# Json web token
+npm install jsonwebtoken --save</br>
