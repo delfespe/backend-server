@@ -1,4 +1,7 @@
 # backend-server
+home</br>
+git push https://github.com/delfespe/backend-server.git
+</br>
 Express
 servidor de peticiones rest
 https://expressjs.com
@@ -83,3 +86,10 @@ npm install body-parser --save </br>
 
 # Json web token
 npm install jsonwebtoken --save</br>
+https://jwt.io/</br>
+
+# Upload
+npm install express-fileupload --save</br>
+
+# Serve index
+npm install serve-index --save</br>
